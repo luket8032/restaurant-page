@@ -38,13 +38,13 @@ const createMenu = (() => {
             'Sweet_and_spicy_bacon_burger.webp',
             'Sweet and Spicy Bacon Burger',
             'Large Bun (5"), Large Beef Patty (5") (2), American Cheese and Monterey Jack Cheese (1), Bacon Slices (3), Grilled Onions (Regular), Sweet & Spicy (Regular), Mustard (Regular)'
-        )
+        );
         const itemFour = createItem(
             'whatachickn_sandwich.webp',
             'Whatachickn Sandwhich',
             'Brioche Bun (4"), Whatachick’n Filet (1), Tomato (Regular), Leaf Lettuce (Regular), WhataSauce® (Regular)'
-        )
-        heading.textContent = 'Menu'
+        );
+        heading.textContent = 'Menu';
         menu.classList.add('menu');
         menuContainer.classList.add('menu-container');
         itemOne.classList.add('menu-item');

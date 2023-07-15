@@ -1,11 +1,12 @@
 import { createHome } from "./home";
 import { createMenu } from "./menu"
+import { createContact } from "./contact"
 import './style.css'
 
 let newElement
 
 function initialRender() {
-    createMenu.createMenu();
+    createContact.createContact();
 };
 
 initialRender();

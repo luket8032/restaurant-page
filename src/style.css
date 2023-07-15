@@ -111,6 +111,12 @@ textarea {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .menu {
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5);
