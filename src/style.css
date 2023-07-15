@@ -46,6 +46,10 @@ input {
     margin-bottom: 12px;
 }
 
+li {
+    color: white;
+}
+
 textarea {
     border-radius: 6px;
     margin-bottom: 12px;
