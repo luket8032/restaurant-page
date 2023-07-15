@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {
+    color:white; 
+    text-decoration:none; 
+    cursor:pointer;  
+}
+
+body {
+    background: url(whataburger.jpg) no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form {
+    border: solid 2px #fd5f06;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    padding: 16px;
+    position: relative;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+textarea {
+    border-radius: 6px;
+    margin-bottom: 12px;
+    resize: none;
+}
+
+.content {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.content button {
+    background-color: #fd5f06;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 1.1em;
+    height: 50px;
+    overflow: auto;
+    width: 200px;
+    transform: .3s;
+}
+
+.content button:hover {
+    scale: 1.1;
+    transition: .2s;
+}
+
+.content h1 {
+    font-size: 3.5em;
+    margin-bottom: 16px;
+    text-align: center;
+    width: 700px;
+}
+
+.content p {
+    color: white;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+}
+
+.footer {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: solid 2px #fd5f06;
+    color: white;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container {
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.menu::-webkit-scrollbar {
+    display: none;
+  }
+
+.menu-container {
+    border: solid 2px #fd5f06;
+    border-radius: 12px;
+    padding: 16px;
+    height: fit-content;
+    width: 800px;
+}
+
+.menu-item {
+    display: flex;
+}
+
+.menu-item img {
+    height: 250px;
+    width: 250px;
+}
+
+.menu-text {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+}
+
+.nav {
+    align-items: end;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-bottom: solid 2px #fd5f06;
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    padding: 16px;
+}
+
+.nav h1 {
+    margin-right: 32px;
+}
+
+.nav ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav li {
+    font-size: 1.5em;
+    margin-right: 32px;
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+}
+
+.nav li:after {
+    content: '';scale: 1.1;
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fd5f06;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav li:hover {
+    scale: 1.1;
+    transition: .2s;
+}
+
+.nav li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
