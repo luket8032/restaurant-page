@@ -6,24 +6,33 @@ import './style.css'
 let newElement
 
 function initialRender() {
-    createContact.createContact();
+    createHome.createHome();
+    newEventListeners();
 };
 
 initialRender();
 
-const homeLink = document.querySelector('#homeLink');
-homeLink.addEventListener('click', e => {
-    console.log('switch to home');
-});
+function newEventListeners() {
+    const homeLink = document.querySelector('#homeLink');
+        homeLink.addEventListener('click', e => {
+            document.body.innerHTML = ''
+            createHome.createHome();
+            newEventListeners();
+    });
 
-const menuLink = document.querySelector('#menuLink');
-menuLink.addEventListener('click', e => {
-    console.log('switch to menu');
-});
+    const menuLink = document.querySelector('#menuLink');
+        menuLink.addEventListener('click', e => {
+            document.body.innerHTML = ''
+            createMenu.createMenu();
+            newEventListeners();
+    });
 
-const contactLink = document.querySelector('#contactLink');
-contactLink.addEventListener('click', e => {
-    console.log('switch to contact');
-});
+    const contactLink = document.querySelector('#contactLink');
+        contactLink.addEventListener('click', e => {
+            document.body.innerHTML = ''
+            createContact.createContact();
+            newEventListeners();
+    });
+}
 
 
